@@ -1,0 +1,67 @@
+###################################################################################################
+# Default ROS parameters to load for CloudNode
+
+cloud_node:
+  base_frame: base_link   # the base frame of your system
+  world_frame: map_fusion # the world frame of your system
+
+  ##################################
+  # List of lidar sensors to cluster
+  lidar_list: [ ]
+  lidar_cluster_frame: lidar_cluster
+  lidar:
+    L1:
+      frame_id: os_sensor
+      incoming_topic: /os_cloud_node/points
+      pub_solo_cloud: false
+  
+  ##################################
+  # List of radar sensors to cluster
+  radar_list: [ R1, R2, R3, R4, R5, R6, R7, R8, R9, R10 ]
+  radar_cluster_frame: radar_cluster
+  radar:
+    R1:
+      frame_id: R1
+      incoming_topic: /mmwave_driver/R1/points
+      pub_solo_cloud: false
+    R2:
+      frame_id: R2
+      incoming_topic: /mmwave_driver/R2/points
+      pub_solo_cloud: false
+    R3:
+      frame_id: R3
+      incoming_topic: /mmwave_driver/R3/points
+      pub_solo_cloud: false
+    R4:
+      frame_id: R4
+      incoming_topic: /mmwave_driver/R4/points
+      pub_solo_cloud: false
+    R5:
+      frame_id: R5
+      incoming_topic: /mmwave_driver/R5/points
+      pub_solo_cloud: false
+    R6:
+      frame_id: R6
+      incoming_topic: /mmwave_driver/R6/points
+      pub_solo_cloud: false
+    R7:
+      frame_id: R7
+      incoming_topic: /mmwave_driver/R7/points
+      pub_solo_cloud: false
+    R8:
+      frame_id: R8
+      incoming_topic: /mmwave_driver/R8/points
+      pub_solo_cloud: false
+    R9:
+      frame_id: R9
+      incoming_topic: /mmwave_driver/R9/points
+      pub_solo_cloud: false
+    R10:
+      frame_id: R10
+      incoming_topic: /mmwave_driver/R10/points
+      pub_solo_cloud: false
+    
+      
+###################################################################################################
+## EOF 
+###################################################################################################

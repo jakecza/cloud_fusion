@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<launch>
+<!-- POC: Jake Czajkowski (jczajkowski@mines.edu) -->
+
+<!-- Set package level arguments-->
+    
+<!-- Load ROS params for m3_fusion via YAML file -->
+    <rosparam file="$(find cloud_fusion)/yaml/default.yaml" />
+
+<!-- Cloud Node -->
+    <node pkg="cloud_fusion" type="cloud_node" name="cloud_node" output="screen">
+        
+    </node>
+</launch>
